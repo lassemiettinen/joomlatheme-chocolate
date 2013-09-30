@@ -1,0 +1,177 @@
+/* MODUULIEN ULKOASUMÄÄRITYKSET */
+
+
+/* STANDARDIMODUULIN TIEDOT */
+
+div.moduletable {
+  margin: 0 0 1.5em 0;
+  padding: 0;
+}
+
+div.moduletable-ehdokasnro {
+  position: absolute;
+  top: 65px;
+  left: 550px;
+}
+
+
+/* -----ETUSIVUN MODUULIT----- */
+
+
+
+/* TERVETULOA-MODUULI ELI ETUSIVUN TERVEHDYSTEKSTI JA -KUVA */
+
+#ydinpalkki div.introteksti div.entry img {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#ydinpalkki div.introteksti h3.otsikko_moduulissa {
+}
+
+
+/* UUTISVIRTA OMASTA BLOGISTA */
+
+div.uutisvirta {
+  clear: left;
+  margin-bottom: -24px;
+  margin-left: -10px;
+  background: rgb(194,45,24) url(../images/punalaatikko_vasenyla.gif) no-repeat left top;
+  width: 50%;
+}
+
+div.uutisvirta div {
+  margin: 0;
+  padding: 0;
+  background: transparent url(../images/punalaatikko_oikeayla.gif) no-repeat right top;
+  width: auto;
+}
+
+div.uutisvirta div div {
+  background: transparent url(../images/punalaatikko_oikeaala.gif) no-repeat right bottom;
+}
+
+div.uutisvirta div div div {
+  background: transparent url(../images/punalaatikko_vasenala.gif) no-repeat left bottom;
+  padding: 10px;
+}
+
+div.uutisvirta div div div div {
+  background: transparent none;
+  padding: 0;
+}
+
+div.uutisvirta h3 {
+  font-size: 1.4em;
+}
+
+div.uutisvirta ul.feed {
+  margin: 0;
+  padding: 0 0.2em 0.5em 0.2em;
+  list-style-type: none;
+}
+
+div.uutisvirta ul.feed li {
+  margin-top: 0.5em;
+}
+
+div.uutisvirta ul.feed li a {
+  color: rgb(255,255,255);
+  font-weight: normal;
+}
+
+div.uutisvirta ul.feed li a:hover {
+}
+
+
+
+div.module-sarjakuva {
+  float: right;
+  width: 50%;
+}
+
+div.module-sarjakuva h3 {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+
+/* -----RUNOSITAATTI SIVUN ALKUUN----- */
+
+
+div.introruno {
+  float: left;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+div.introruno h3.otsikko_moduulissa {
+  font-size: 1.2em;
+}
+
+div.introruno p {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  font-family: verdana, arial, sans-serif;
+}
+
+
+/* -----TUTUSTU VAALITEEMOIHINI -MODUULI----- */
+
+
+div.teemat {
+  clear: left;
+}
+
+
+/* -----AJANKOHTAISTA SIVUILLA -MODUULI----- */
+
+
+div.kalenteri {
+  clear: left;
+  padding-bottom: 1em;
+}
+
+
+/* -----BANNERIMODUULI----- */
+
+
+div.banneritem {
+  margin-bottom: 1em;
+}
+
+div.banneritem img, #ydinpalkki div.banneritem img {
+  margin: 0;
+  padding: 0;
+}
+
+/*Jos bannerimoduulille on annettu module classiksi 'vierekkain', bannerit tulostetaan rinnakkain */
+div.vierekkain div.banneritem {
+  padding: 0 1em 1em 0;
+  float: left;
+  min-height: 80px;
+}
+/* Samoin tulostetaan tilaa bannereiden yläpuolelle */
+div.vierekkain div.bannergroup {
+  margin-top: 3em;
+}
+#alatunniste div.etusivubannerit div.bannergroup {
+  margin: 0 auto;
+  width: 450px;
+}
+
+div.bannerheading h2 {
+}
+
+
+/* -----LAUSAHDUS (VAALISLOGAN) -MODUULI----- */
+
+
+div.lausahdus {
+  font-style: italic;
+}
+
+div.lausahdus div.entry {
+  display: none;
+}

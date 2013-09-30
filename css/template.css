@@ -1,0 +1,40 @@
+/*
+Theme Name: Sinin suklaateema
+Theme URI: http://www.siniterava.fi/
+Description: Sini Terävän kotisivujen suklaanruskea teema.
+Version: 2.0
+Author: Lasse Miettinen
+Author URI: http://www.lassemiettinen.fi
+*/
+
+@import url(layout.css);
+@import url(teksti.css);
+@import url(valikko.css);
+@import url(moduulit.css);
+
+/* YLEISET TYYLIT */
+
+.kuvan_alle {
+  clear: both;
+}
+
+.runo {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  font-family: verdana, arial, sans-serif;
+  font-style: italic;
+}
+
+.vaakalista {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.vaakalista li {
+  float: left;
+  padding-right: 10px;
+}
+
+#ydinpalkki .vaakalista li img {
+  margin-left: 0;
+}

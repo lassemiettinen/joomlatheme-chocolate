@@ -1,0 +1,108 @@
+/* ------PERUSTEKSTIMUOTOILUT, TS. FONTIT, OTSIKOT, LEIPÄTEKSTI, LUETTELOT------ */
+
+body {
+  font-family: georgia, serif;
+  font-size: 80%;
+  line-height: 1.4em;
+  background-color: rgb(255,255,255);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+h3, h4, h5, h6 {
+  color: rgb(92,36,15);
+  margin-top: 2em;
+}
+
+h1 {
+  font-size: 2.0em;
+  color: rgb(255,255,255);
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.0em;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.0em;
+  font-style: italic;
+}
+
+h6 {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+ul, ol, p {
+  font-size: 1.0em;
+
+}
+
+ul, ol {
+  padding: 0 0 0 1em;
+}
+
+code {
+  font-size: 1.25em;
+}
+
+
+/* ------LINKIT------ */
+
+
+/* LINKKIEN ULKOASU */
+
+a, a:link, a:visited, a:hover, a:active {
+  color: rgb(194,45,24);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ------KUVAT------ */
+
+/* LINKKINÄ TOIMIVAT KUVAT */
+
+a img {
+  border: none;
+}
+
+/* KUVAT TEKSTIN JOUKOSSA */
+
+img {
+  margin: 0 0.3em 0.3em 0.3em;
+}
+
+/* YLEISET TYYLIT */
+
+.kuvan_alle {
+  clear: both;
+}
+
+.runo {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  font-family: verdana, arial, sans-serif;
+  font-style: italic;
+}
+
+.vaakalista {
+  list-style-type: none;
+  padding-left: 0;
+}

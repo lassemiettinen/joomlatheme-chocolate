@@ -1,0 +1,47 @@
+#laatikko {
+  position: relative;
+  height: 1px;
+}
+
+#sisalto-a, #sisalto-b, #sisalto-c, #sisalto-d, #sisalto-e {
+  position: relative;
+  height: 1px;
+}
+
+div.paavalikko, div.paavalikko div, div.uutisvirta, div.uutisvirta div {
+  position: relative;
+  height: 1px;
+}
+
+div.uutisvirta {
+  margin-bottom: 0;
+}
+
+#ylatunniste {
+  height: 192px;
+}
+
+#otsikko h1 span.korvaus {
+  background-image: url(../images/otsikko.jpg);
+}
+
+#otsikko h1 span.korvaus {
+  z-index: 1;
+}
+
+#sivupalkki-1 {
+/*  margin: 0 0 0 -185px;
+  padding: 0;*/
+}
+
+#kaikki {
+  width: auto;
+}
+
+#ydinpalkki {
+  width: 40em;
+}
+
+#kaikki div.alatunniste {
+  width: 35em;
+}

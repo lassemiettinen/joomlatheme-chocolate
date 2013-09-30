@@ -1,0 +1,24 @@
+#sisalto-a, #sisalto-b, #sisalto-c, #sisalto-d, #sisalto-e {
+  min-width: 8em;
+}
+
+div.paavalikko ul li {
+  list-style-position: outside;
+}
+
+div.uutisvirta {
+  margin-bottom: 0;
+}
+
+div.uutisvirta div {
+  min-height: 1em;
+}
+
+#ylatunniste {
+  height: 192px;
+}
+
+#otsikko h1 span.korvaus {
+  background-image: url(../images/otsikko.jpg);
+}
+

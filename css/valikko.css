@@ -1,0 +1,159 @@
+﻿/* SIVUN PÄÄVALIKKO VASEMMASSA LAIDASSA */
+
+div.paavalikko {
+  color: rgb(255,255,255);
+  background: rgb(194,45,24) url(../images/valikko_vasenyla.gif) no-repeat left top;
+}
+
+div.paavalikko div {
+  background: transparent url(../images/valikko_oikeayla.gif) no-repeat right top;
+}
+
+div.paavalikko div div {
+  background: transparent url(../images/valikko_oikeaala.gif) no-repeat right bottom;
+}
+
+div.paavalikko div div div {
+  background: transparent url(../images/valikko_vasenala.gif) no-repeat left bottom;
+  padding: 25px 15px;
+}
+
+div.paavalikko ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.4em;
+  width: 130px;
+}
+
+div.paavalikko li {
+}
+
+div.paavalikko a {
+  display: block;
+  width: 115px;
+  height: 35px;
+  margin: 0;
+  padding: 10px 0 0 0;
+  color: rgb(255,255,255);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  vertical-align: text-bottom;
+}
+
+div.paavalikko a:hover {
+  color: rgb(92,36,15);
+}
+
+div.paavalikko li#current a {
+  color: rgb(124,220,202);
+}
+
+div.paavalikko a:hover#active_menu {
+}
+
+
+div.paavalikko a span.korvaus {
+  background: transparent url(../images/valikko_valkoinen.gif) no-repeat left top;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+div.paavalikko li a:hover span.korvaus {
+  background-image: url(../images/valikko_ruskea.gif);
+}
+
+div.paavalikko li#current a span.korvaus {
+  background-image: url(../images/valikko_sininen.gif);
+}
+
+div.paavalikko li.id1 a span.korvaus {
+  background-position: 0 0;
+}
+div.paavalikko li.id14 a span.korvaus {
+  background-position: 0 -45px;
+}
+div.paavalikko li.id2 a span.korvaus {
+  background-position: 0 -90px;
+}
+div.paavalikko li.id3 a span.korvaus {
+  background-position: 0 -135px;
+}
+div.paavalikko li.id7 a span.korvaus {
+  background-position: 0 -180px;
+}
+div.paavalikko li.id8 a span.korvaus {
+  background-position: 0 -225px;
+}
+div.paavalikko li.id10 a span.korvaus {
+  background-position: 0 -270px;
+}
+
+
+/* ALAVALIKOT */
+
+/* alavalikko alkaa 35px alas ja 20px oikealle päävalikon linkin vasemmasta yläkulmasta */
+
+div.paavalikko ul li.parent ul {
+  margin: -10px 0 10px 20px;
+  font-size: 0.8em;
+}
+
+div.paavalikko ul li.parent li a {
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  width: 110px;
+  color: rgb(255,255,255);
+}
+
+div.paavalikko ul li.parent li a:hover {
+  text-decoration: none;
+  color: rgb(92,36,15);
+}
+
+div.paavalikko li#current li a {
+  color: rgb(255,255,255);
+}
+
+div.paavalikko ul li.parent ul li a span.korvaus, div.paavalikko ul li#current ul li a span.korvaus {
+  background-image: url(../images/alavalikko_valkoinen.gif);
+}
+
+div.paavalikko ul li.parent ul li a:hover span.korvaus, div.paavalikko ul li#current ul li a:hover span.korvaus {
+  background-image: url(../images/alavalikko_ruskea.gif);
+}
+
+div.paavalikko ul li.parent ul li#current a span.korvaus {
+  background-image: url(../images/alavalikko_sininen.gif);
+}
+
+div.paavalikko li.parent li.id12 a span.korvaus {
+  background-position: 0 0;
+}
+div.paavalikko li.parent li.id13 a span.korvaus {
+  background-position: 0 -60px;
+}
+div.paavalikko li.parent li.id15 a span.korvaus {
+  background-position: 0 -20px;
+}
+div.paavalikko li.parent li.id16 a span.korvaus {
+  background-position: 0 -40px;
+}
+div.paavalikko li.parent li.id6 a span.korvaus {
+  background-position: 0 -80px;
+}
+div.paavalikko li.parent li.id5 a span.korvaus {
+  background-position: 0 -100px;
+}
+div.paavalikko li.parent li.id4 a span.korvaus {
+  background-position: 0 -120px;
+}
+div.paavalikko li.parent li.id20 a span.korvaus {
+  background-position: 0 -141px;
+}

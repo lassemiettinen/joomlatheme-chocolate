@@ -1,0 +1,321 @@
+/* ------PERUSTEKSTIMUOTOILUT, TS. FONTIT, OTSIKOT, LEIPÄTEKSTI, LUETTELOT------ */
+
+
+/* Värien koodit
+
+  color: rgb(92,36,15); #5c240f (ruskea)
+  color: rgb(194,45,24); (punainen)
+  color: rgb(124,220,202); (sininen)
+
+*/
+
+
+body {
+  font-family: georgia, serif;
+  font-size: 80%;
+  line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  color: rgb(92,36,15);
+}
+
+h1 {
+  font-size: 2.0em;
+  color: rgb(255,255,255);
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.0em;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.0em;
+  font-style: italic;
+}
+
+h6 {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+ul, ol, p {
+  font-size: 1.0em;
+
+}
+
+ul, ol {
+  padding: 0 0 0 1em;
+}
+
+code {
+  font-size: 1.25em;
+}
+
+
+/* Väliotsikoiden ylämarginaali 2em leipätekstissä */
+
+div.entry h3, div.entry h4, div.entry h5, div.entry h6 {
+  margin-top: 2em;
+}
+
+/* ------LINKIT------ */
+
+
+/* LINKKIEN ULKOASU */
+
+a, a:link {
+  color: rgb(194,45,24);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: rgb(194,45,24);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ------KUVAT------ */
+
+/* LINKKINÄ TOIMIVAT KUVAT */
+
+a img {
+  border: none;
+}
+
+/* KUVAT TEKSTIN JOUKOSSA */
+
+#ydinpalkki img {
+  margin: 0 0.3em 0.3em 0.3em;
+}
+
+
+/* ------OTSIKOT------ */
+
+/* OTSIKKO YKSITTÄISELLÄ SIVULLA TAI ARTIKKELISSA */
+
+h2.otsikko_yksin, h2.otsikko_kategoria {
+  font-size: 1.6em;
+  margin-bottom: 2em;
+  color: rgb(92,36,15);
+}
+
+/* OTSIKKO MONEN ARTIKKELIN LISTASSA */
+
+h3.otsikko_listassa {
+}
+
+
+
+/* ------BLOGI- TAI LISTAMUODOSSA OLEVA KATEGORIA- TAI SECTION-NÄKYMÄ------ */
+
+
+/* KATEGORIAN KUVAUS */
+
+div.kuvaus {
+  margin: 0 0 2em 0;
+}
+
+#ydinpalkki div.kuvaus img {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+/* BLOGIMUODOSSA NÄYTETTÄVIEN ARTIKKELEIDEN VÄLIT */
+
+div.post {
+  margin-bottom: 2em;
+}
+
+div.entry {
+}
+
+
+/* KATEGORIA- JA MUIDEN LISTAUSSIVUJEN MUOTOILUT */
+
+ul.lista {
+}
+ul.lista li {
+  margin-bottom: 0.2em;
+}
+ul.lista a {
+}
+ul.lista a:hover {
+}
+ul.lista p {
+  margin-bottom: 0;
+}
+ul.lista div.kuvaus {
+  margin: 0.2em 0 0 0;
+}
+#ydinpalkki ul.lista img {
+  margin: 0;
+}
+span.montako {
+  font-style: italic;
+}
+
+/* LISTASIVUN LOPUSSA OLEVA NAVIGAATIO */
+
+div.navigation {
+  margin-top: 1em;
+}
+
+p.pagination a {
+  font-weight: normal;
+}
+p.pagination span.nykyinen {
+  font-weight: bold;
+}
+
+
+/* ARTIKKELIEN JATKUMO BLOGIMUODOSSA */
+/* Tässä varmistetaan, että seuraava artikkeli alkaa vasta edellisen artikkelin sisältämien kuvien alapuolelta; */
+
+div.blog div.post {
+  clear: left;
+}
+
+
+/* ------YKSITTÄINEN ARTIKKELI------ */
+
+
+/* ARTIKKELIN TUNNISTETIEDOT (julkaisuaika, kirjoittaja jne.) */
+
+p.viestin_tiedot {
+  margin: 0 0 1.5em 0;
+  color: rgb(128,128,128);
+  font-size: 0.8em;
+}
+
+p.viestin_tiedot a {
+  color: rgb(128,128,128);
+  font-weight: bold;
+}
+
+p.viestin_tiedot a:hover {
+  color: #444;
+}
+
+p.viestin_meta {
+  margin: 1em 0 0.5em 0;
+  color: rgb(128,128,128);
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+p.viestin_meta a {
+}
+
+p.viestin_meta a:hover {
+}
+
+/* ARTIKKELIN KÄSITTELYVAIHTOEHDOT (printtaus, pdf, meili) */
+
+p.buttons {
+  float: left;
+/*  float: right;*/
+}
+
+#ydinpalkki p.buttons img {
+  float: left;
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
+#ydinpalkki p.buttons a {
+  float: left;
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
+
+/* -----TEKSTIIN LIITTYVÄT SIVUHALLINNOLLISET ELEMENTIT----- */
+
+/* NK. BREADCRUMB TRAIL, ELI POLKU ETUSIVULTA NYKYSIVULLE */
+
+div#ydinpalkki div#navipolku {
+  margin: -24px 0 2em 0;
+  padding: 0 0 0 30%;
+  text-align: right;
+
+}
+
+#navipolku p.pathway {
+  font-size: 0.8em;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.2em;
+  color: rgb(92,36,15);
+}
+
+#navipolku a.pathway {
+}
+
+#navipolku a:visited.pathway {
+  color: rgb(194,45,24);
+}
+
+#navipolku img {
+  margin: 0;
+  padding: 0;
+}
+
+/* 'TAKAISIN'-NAPPULA SIVUN LOPUSSA */
+
+div#ydinpalkki div.back_button {
+  margin: 2em 0 1em 0;
+}
+
+
+
+
+/* -----TEKSTIT MUUALLA KUIN YDINPALKISSA (SIVUPALKEISSA JA ALATUNNISTEESSA)----- */
+
+
+/* OIKEA SIVUPALKKI */
+
+/* Tekstit valkoisella */
+
+#sivupalkki-2 {
+  color: #fff;
+}
+#sivupalkki-2 h3.otsikko_moduulissa {
+  color: #fff;
+  line-height: 1.6em;
+}
+
+
+/* ALATUNNISTE */
+
+div.alatunniste {
+  text-align: right;
+}
+
+div.alatunniste p {
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+div.alatunniste a {
+  font-weight: normal;
+}
